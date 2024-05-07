@@ -1,2 +1,2 @@
 # Word-Problem
-This repository is a dedicated space on GitHub tailored to addressing the intricate challenges of word composition.
+Welcome to the "Word Composition Problem Solver" repository! Here, you'll find a Java code solution designed to tackle the intriguing challenge of the Word Composition Problem.
