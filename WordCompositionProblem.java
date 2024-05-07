@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class WordCompositionProblem {
-    
+    //Reading the input file
     private static List<String> readWordsFromFile(String inputFile) {
         List<String> words = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFile))) {
@@ -18,6 +18,7 @@ public class WordCompositionProblem {
         return words;
     }
 
+    //Creating function to find the compound words
     private static List<String> findCompoundWords(List<String> words, Set<String> wordSet) {
         List<String> compoundWords = new ArrayList<>();
         for (String word : words) {
@@ -28,6 +29,7 @@ public class WordCompositionProblem {
         return compoundWords;
     }
 
+    //Creating the function to check whether the wordset is compound
     private static boolean isCompound(String word, Set<String> wordSet) {
         for (int i = 1; i < word.length(); i++) {
             String prefix = word.substring(0, i);
@@ -38,6 +40,8 @@ public class WordCompositionProblem {
         }
         return false;
     }
+
+    //main function
     public static void main(String[] args) {
         String inputFile = "Input_02.txt"; // Path to input file
         long startTime = System.currentTimeMillis();
